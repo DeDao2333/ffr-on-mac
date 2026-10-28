@@ -1,0 +1,81 @@
+nxnative, vendored from https://github.com/seedds/nxnative
+Base commit: 1402ded2d90521ab70ededbc55aab4705515064b
+Copied: 2026-10-28, 1705 files
+Local changes on top of the base commit (not in upstream yet):
+  M dm/games/01005270232F2000/README.md
+  M dm/games/README.md
+  M dm/gfx/nvn/dmsh_chain.h
+  M dm/gfx/nvn/nvn_geometry.inc
+  M dm/gfx/nvn/nvn_mtl.m
+  M dm/gfx/nvn/nvn_rec.h
+  M dm/gfx/tests/Makefile
+  M dm/gfx/tests/t_pso_bundle.m
+  M dm/gfx/tests/t_pso_warm.m
+  M dm/gfx/tools/c1_guard.py
+  M dm/gfx/tools/cb_extent.py
+  M dm/gfx/tools/dmsh_build.py
+  M dm/gfx/tools/dmsh_chain.lock
+  M dm/gfx/tools/dmsh_chain.py
+  M dm/gfx/tools/dmsh_xlate/Program.cs
+  M dm/gfx/tools/dmsh_xlate_bin/Ryujinx.Common.dll
+  M dm/gfx/tools/dmsh_xlate_bin/Ryujinx.Graphics.Shader.dll
+  M dm/gfx/tools/dmsh_xlate_bin/Spv.Generator.dll
+  M dm/gfx/tools/dmsh_xlate_bin/dmsh_xlate.deps.json
+  M dm/gfx/tools/dmsh_xlate_bin/dmsh_xlate.dll
+  M dm/gfx/tools/dmsh_xlate_bin/dmsh_xlate.pdb
+  M dm/gfx/tools/pso_offline.py
+  M dm/host/Makefile
+  M dm/host/hle_audio.c
+  M dm/host/hle_fpslock.c
+  M dm/host/hle_uemalloc.c
+  M dm/host/tests/Makefile
+  M dm/host/tests/t_audio.c
+  M dm/host/tests/t_audio_spsc.c
+  M dm/ios/tests/test_profile_pack.py
+  M dm/ios/tools/build_ipa.sh
+  M dm/mac/pack_app.py
+  M dm/third_party/ryujinx/README.md
+  M dm/third_party/ryujinx/src/Ryujinx.Graphics.Shader/IGpuAccessor.cs
+  M dm/third_party/ryujinx/src/Ryujinx.Graphics.Shader/Translation/Optimizations/BindlessElimination.cs
+  M dm/tools/tests/test_nsp_chain.py
+  M dm/tools/tests/test_nsp_mac_app.py
+  M dm/tools/tests/test_pso_offline.py
+  M docs/agents/symptoms.md
+  M docs/development.md
+  M docs/reference/audio.md
+  M docs/reference/rendering.md
+  M docs/reference/shaders.md
+  M scripts/build_ipa_from_nsp.py
+  A dm/games/0100B8A026F14000/README.md
+  A dm/games/0100B8A026F14000/bench.tsv
+  A dm/games/0100B8A026F14000/bf_want.tsv
+  A dm/games/0100B8A026F14000/game.tsv
+  A dm/games/0100B8A026F14000/patches.py
+  A dm/games/0100B8A026F14000/pso_manifest.tsv
+  A dm/games/0100B8A026F14000/pso_observed_pairs.tsv
+  A dm/games/0100B8A026F14000/pso_pairs.tsv
+  A dm/games/0100B8A026F14000/shader_facts.tsv
+  A dm/games/0100B8A026F14000/shader_facts_manual.tsv
+  A dm/games/0100B8A026F14000/shader_map.tsv
+  A dm/games/0100B8A026F14000/shader_map.tsv.conflicts.tsv
+  A dm/games/0100B8A026F14000/shader_pairs.tsv
+  A dm/gfx/nvn/nvn_pass_raw.h
+  A dm/gfx/nvn/nvn_tbuf_align.inc
+  A dm/gfx/tests/t_pass_raw.m
+  A dm/gfx/tests/t_tbuf_align.m
+  A dm/gfx/tests/test_c1_guard.py
+  A dm/gfx/tests/test_cb_extent.py
+  A dm/gfx/tests/test_dmsh_analysis.py
+  A dm/gfx/tests/test_early_fragment_tests.py
+  A dm/gfx/tools/dmsh_analysis.py
+  A dm/gfx/tools/dmsh_analysis_stamp.py
+  A dm/host/audio_pcm_fifo.h
+  A dm/host/tests/t_audio_pcm_fifo.c
+  A dm/tools/tests/test_analysis_table_stamps.py
+  A dm/tools/tests/test_prewarm_capture_import.py
+  A scripts/import_prewarm_capture.py
+Left out:
+  docs/images/
+  dm/gfx/tests/t_tbuf_align
+  dm/gfx/tests/t_tbuf_align.dSYM/
+  dm/gfx/nvn/nvn_tbuf_align_diag.inc

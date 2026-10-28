@@ -1,0 +1,45 @@
+# This repository holds code, notes and scripts only. None of the following may be committed.
+# nxnative/ has its own .gitignore files for its build outputs.
+
+# Game images and extracted game content
+*.xci
+*.xcz
+*.nsp
+*.nsz
+*.nca
+*.nso
+*.nro
+*.pak
+*.ucas
+*.utoc
+*.uasset
+*.uexp
+romfs/
+exefs/
+
+# Keys and saves
+*.keys
+*.sav
+GameSaveData*
+/save/
+/save.work/
+
+# Build products (the app contains the game)
+*.app/
+*.ipa
+*.patched.bin
+*_build/
+*_survey/
+/work/
+/tools/split_xci/bin/
+/tools/split_xci/obj/
+
+# Local diagnostics: screenshots show the game, logs carry local paths
+*.noindex/
+/*.log
+/*.png
+
+# Python and macOS
+.venv/
+__pycache__/
+.DS_Store

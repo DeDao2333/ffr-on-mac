@@ -1,0 +1,3 @@
+# name<TAB>DM_KEYS<TAB>window start seconds<TAB>window length seconds<TAB>description
+battlefield_idle	f1600:A	60	30	Continue from a cloned opening Battlefield save; stand at the entrance with the default camera. Warm startup before measuring.
+battlefield_pan	f1600:A,f3000:RRight~1,f3600:RLeft~1	45	30	Same Battlefield entrance; slow right-stick pan and return without moving the character or entering a battle.
