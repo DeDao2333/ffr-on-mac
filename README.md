@@ -2,11 +2,16 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
+<p align="center">
+  <img src="docs/screenshots/title.jpg" width="49%" alt="The title screen running on a Mac">
+  <img src="docs/screenshots/battlefield.jpg" width="49%" alt="The opening Battlefield at night, with fires along the road">
+</p>
+
 Run the Nintendo Switch release of FINAL FANTASY RESONANCE (Asian release, `0100B8A026F14000`) natively on an Apple silicon Mac. Bring your own game file and `prod.keys`; one script builds a Mac app from them.
 
 It is not an emulator: the game's own ARM64 code runs directly on the Apple chip, and the Switch's NVN graphics are rebuilt on Metal. The toolchain is [nxnative](https://github.com/seedds/nxnative), vendored in [`nxnative/`](nxnative/) with the fixes this game needs.
 
-**This repository contains no game content and distributes none:** no game program, art, text, audio, shaders, saves or keys.
+**Apart from the two screenshots above, this repository contains no game content and distributes none:** no game program, art, text, audio, shaders, saves or keys.
 
 ## Status
 
@@ -57,6 +62,7 @@ tools/check_publish.py       pre-publish check for game files, keys and personal
 tools/sync_nxnative.py       refreshes nxnative/ from a local nxnative checkout
 bench/bench.tsv              repeatable benchmark routes
 docs/                        notes
+  screenshots/               the two screenshots on this page
 ```
 
 ## Acknowledgements

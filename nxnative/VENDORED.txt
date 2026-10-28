@@ -79,3 +79,5 @@ Left out:
   dm/gfx/tests/t_tbuf_align
   dm/gfx/tests/t_tbuf_align.dSYM/
   dm/gfx/nvn/nvn_tbuf_align_diag.inc
+Image links pointed at upstream (the images are left out):
+  README.md

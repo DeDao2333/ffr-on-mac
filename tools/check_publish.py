@@ -22,6 +22,9 @@ BAD_PARTS = {'romfs', 'exefs', 'inputs', 'save', 'save.work', 'merged_probe'}
 VENDOR = 'nxnative/'
 VENDOR_MAX_MB = 20.0
 VENDOR_BINARY = ('nxnative/dm/gfx/tools/dmsh_xlate_bin/',)
+# Screenshots shown on the README pages: JPG or PNG under docs/screenshots/ only.
+SCREENSHOTS = 'docs/screenshots/'
+SCREENSHOT_EXT = {'.jpg', '.png'}
 TEXT_RULES = [
     ('home path', re.compile(r'/(?:Users|home)/(?!<)[^/\s"\'`)]+/')),
     ('key file line', re.compile(r'^\s*[a-z][a-z0-9_]*\s*=\s*[0-9a-fA-F]{32,}\s*$', re.M)),
@@ -49,7 +52,8 @@ def main():
             continue
         rel = p.relative_to(ROOT)
         posix = rel.as_posix()
-        if p.suffix.lower() in BAD_EXT:
+        shot = posix.startswith(SCREENSHOTS) and p.suffix.lower() in SCREENSHOT_EXT
+        if p.suffix.lower() in BAD_EXT and not shot:
             found.append((rel, f'file type {p.suffix}'))
         if BAD_PARTS & set(rel.parts[:-1]) or rel.parts[0].endswith('.app'):
             found.append((rel, 'inside a game/save/build folder'))
@@ -59,7 +63,7 @@ def main():
             continue
         data = p.read_bytes()
         if b'\0' in data[:8192]:
-            if not posix.startswith(VENDOR_BINARY):
+            if not posix.startswith(VENDOR_BINARY) and not shot:
                 found.append((rel, 'binary file'))
             continue
         text = data.decode('utf-8', errors='replace')

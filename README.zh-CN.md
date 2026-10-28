@@ -2,11 +2,16 @@
 
 [English](README.md) | **简体中文**
 
+<p align="center">
+  <img src="docs/screenshots/title.jpg" width="49%" alt="在 Mac 上运行的标题画面">
+  <img src="docs/screenshots/battlefield.jpg" width="49%" alt="开场的 Battlefield 夜景，路边燃着火">
+</p>
+
 在 Apple 芯片的 Mac 上原生运行 Nintendo Switch 版 FINAL FANTASY RESONANCE（亚洲版，`0100B8A026F14000`）。游戏文件和 `prod.keys` 需要你自己准备，一个脚本就能用它们构建出 Mac 应用。
 
 这不是模拟器：游戏自身的 ARM64 代码直接在 Apple 芯片上运行，Switch 的 NVN 图形调用改在 Metal 上重建。工具链是 [nxnative](https://github.com/seedds/nxnative)，已连同本游戏需要的修复一起放在 [`nxnative/`](nxnative/) 里。
 
-**本仓库不包含、也不分发任何游戏内容**：没有游戏程序、美术、文字、音频、着色器、存档或密钥。
+**除上面两张截图外，本仓库不包含、也不分发任何游戏内容**：没有游戏程序、美术、文字、音频、着色器、存档或密钥。
 
 ## 状态
 
@@ -59,6 +64,7 @@ tools/check_publish.py       发布前检查游戏文件、密钥和个人路径
 tools/sync_nxnative.py       从本地 nxnative 检出刷新 nxnative/
 bench/bench.tsv              可重复的性能测试路线
 docs/                        说明文档
+  screenshots/               本页的两张截图
 ```
 
 ## 致谢
